@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onyekachi Vincent Ebube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🌀 PRELOADER -->
+  <div id="preloader">
+    <div class="loader">
+      <h2>Loading Portfolio...</h2>
+    </div>
+  </div>
+
+   <header>
+  <div class="vin">My Portfolio.</div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="Recent work.html">Recent work</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+
+  <section class="contact-section">
+    <h2>Contact <span>Me!</span></h2>
+    <form class="contact-form">
+      <div class="form-row">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <div class="form-row">
+        <input type="text" placeholder="Mob. Number" required>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <textarea placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="app.js"></script>
+
+ <footer>
+  © 2025 Onyekachi Vincent | All Rights Reserved
+  <p class="Phone">Email: <a class="con" href="mailto:youremail@example.com">onyekachiebube97@gmail.com</a></p>
+<p class="Phone">Phone: <a class="con" href="tel:+234 814 2102 091">+234 814 2102 091</a></p>
+</footer>
+
+ <script>
+    // Hide preloader after load
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      setTimeout(() => preloader.classList.add("hide"), 1200);
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onyekachi Vincent Ebube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🌀 PRELOADER -->
+  <div id="preloader">
+    <div class="loader">
+      <h2>Loading Portfolio...</h2>
+    </div>
+  </div>
+
+ <header>
+  <div class="vin">My Portfolio.</div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="Recent work.html">Recent work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <div class="profile-pic">
+      <img src="one.jpg" alt="My Photo">
+    </div>
+
+    <div class="about-text">
+      <h2>About <span class="highlight">Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>
+        I’m a passionate <span class="highlight">Software Developer</span> with a strong interest in 
+        creating interactive and user-friendly applications. My journey in tech started with curiosity, 
+        and today, I specialize in building responsive websites and applications using 
+        <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, 
+        <span class="highlight">JavaScript</span>, <span class="highlight">React</span>, 
+        <span class="highlight">Node.js</span>, and <span class="highlight">MySQL</span>.
+      </p>
+
+      <!-- Hidden extra content -->
+      <div id="more-text" style="display: none;">
+        <p>
+          Beyond coding, I’m passionate about continuous learning, problem-solving, and collaboration.  
+          I enjoy exploring new technologies, contributing to open-source projects, and building tools that 
+          improve people’s daily lives.  
+        </p>
+        <p>
+          In my free time, I love reading tech blogs, practicing UI/UX design, and mentoring beginners.  
+          My goal is to grow into a full-stack developer and one day lead innovative projects that make a global impact.  
+        </p>
+      </div>
+
+      <!-- Button -->
+      <a href="#" class="btn" id="see-more-btn">See More</a>
+    </div>
+  </section>
+
+   <footer>
+  © 2025 Onyekachi Vincent | All Rights Reserved
+  <p class="Phone">Email: <a class="con" href="mailto:youremail@example.com">onyekachiebube97@gmail.com</a></p>
+<p class="Phone">Phone: <a class="con" href="tel:+234 814 2102 091">+234 814 2102 091</a></p>
+
+<script src="app.js"></script>
+
+ <script>
+    // Hide preloader after load
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      setTimeout(() => preloader.classList.add("hide"), 1200);
+    });
+  </script>
+
+</body>
+</html>

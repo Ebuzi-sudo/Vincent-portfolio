@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onyekachi Vincent Ebube</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra styling for smooth expand/collapse */
+    .more-text {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+    .more-text.open {
+      max-height: 300px; /* Adjust if your text is longer */
+    }
+  </style>
+  </head>
+  <body>
+
+    <!-- 🌀 PRELOADER -->
+  <div id="preloader">
+    <div class="loader">
+      <h2>Loading Portfolio...</h2>
+    </div>
+  </div>
+  
+<header>
+  <div class="vin">My Portfolio.</div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html" class="active">Service</a></li>
+      <li><a href="Recent work.html">Recent work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+
+  <section id="services">
+    <h2>Our <span>Services</span></h2>
+    <div class="services-container">
+
+      <!-- Service 1 -->
+      <div class="service-box">
+        <i class="fa-solid fa-pencil-ruler"></i>
+        <h3>UI / UX Design</h3>
+        <p>
+          I design beautiful, user-friendly interfaces with a focus on smooth user experience. 
+          From wireframes to high-fidelity prototypes, I create designs that engage users and make navigation effortless.
+        </p>
+        <div class="more-text">
+          <p>
+            My design process includes user research, wireframing, and prototyping.  
+            I use tools like <strong>Figma</strong> and <strong>Adobe XD</strong> to create intuitive layouts, color schemes, and design systems.  
+            My goal is to make every product visually appealing while ensuring <strong>ease of use and accessibility</strong>.
+          </p>
+        </div>
+        <a href="#" class="btn read-more">Read More</a>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-box">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>
+          I build responsive and interactive websites using modern technologies like HTML, CSS, JavaScript, and React. 
+          I ensure every site works smoothly across devices.
+        </p>
+        <div class="more-text">
+          <p>
+            I specialize in both <strong>frontend</strong> (React, JavaScript, CSS) and <strong>backend</strong> (Node.js, MySQL) development.  
+            I also work with <strong>REST APIs</strong> and optimize sites for <strong>speed, security, and SEO</strong>.  
+            My mission is to deliver high-performance web applications that users love.
+          </p>
+        </div>
+        <a href="#" class="btn read-more">Read More</a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-box">
+        <i class="fa-solid fa-bullhorn"></i>
+        <h3>Digital Marketing</h3>
+        <p>
+          I help businesses grow their online presence with SEO, social media marketing, and content strategies. 
+          From brand awareness to lead generation, I make sure your message reaches the right audience.
+        </p>
+        <div class="more-text">
+          <p>
+            My digital marketing approach includes <strong>SEO optimization</strong>, <strong>Google Ads</strong>, and <strong>social media campaigns</strong>.  
+            I track performance using analytics tools and adjust strategies to maximize reach, engagement, and conversions.  
+            The goal is to help brands build <strong>trust, visibility, and long-term growth</strong> online.
+          </p>
+        </div>
+        <a href="#" class="btn read-more">Read More</a>
+      </div>
+
+    </div>
+  </section>
+
+   <footer>
+  © 2025 Onyekachi Vincent | All Rights Reserved
+  <p class="Phone">Email: <a class="con" href="mailto:youremail@example.com">onyekachiebube97@gmail.com</a></p>
+<p class="Phone">Phone: <a class="con" href="tel:+234 814 2102 091">+234 814 2102 091</a></p>
+
+</footer>
+
+  <script>
+    const readMoreBtns = document.querySelectorAll(".read-more");
+
+    readMoreBtns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const moreText = btn.previousElementSibling;
+
+        if (moreText.classList.contains("open")) {
+          moreText.classList.remove("open");
+          btn.textContent = "Read More";
+        } else {
+          moreText.classList.add("open");
+          btn.textContent = "Read Less";
+        }
+      });
+    });
+
+
+    // Hide preloader after load
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      setTimeout(() => preloader.classList.add("hide"), 1200);
+    });
+
+  </script>
+<script src="app.js"></script>
+</body>
+</html>
